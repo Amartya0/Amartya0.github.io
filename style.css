@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* !
+
+! Center Child within parent div
+! parent-div {
+!     display: grid;
+!     place-content: center;
+! }
+
+! */
+
+
+body {
+    width: 100%;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container {
+    color: red;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.432) 0px 2px 3px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.664) 1px 1px 3px;
+}
+
+.nav-title {
+    color: rgb(255, 255, 255);
+}
+
+.nav-title a {
+    font-size: 2.5rem;
+    text-shadow: rgba(0, 0, 0, 0.63) 2px 2px 3px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    text-shadow: rgba(0, 0, 0, 0.664) 1px 1px 3px;
+    padding: 1rem;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.664) 1px 1px 3px;
+}
+
+footer div:first-child {
+    border-right: solid 2px black;
+    padding-right: 10px;
+}
